@@ -6,7 +6,7 @@
  * @av: double pointer array
  * Return: 0
  */
-char *argstostr(int ac, char **av)
+char *argstostr(int agc, char **agv)
 {
 	int i, n, r = 0, l = 0;
 	char *str;
@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < agc; i++)
 	{
-		for (n = 0; av[i][n]; n++)
+		for (n = 0; agv[i][n]; n++)
 		{
 			str[r] = agv[i][n];
 		        r++;
